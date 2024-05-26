@@ -8,6 +8,7 @@ function createDictionary(entries) {
   // Створення порожнього словника
   // Використання методу forEach для перебору масиву пар ключ-значення
   // Додавання пари ключ-значення до словника за допомогою методу set
+  return new Map(entries);
 }
 
 // Приклад використання функції createDictionary
@@ -98,8 +99,11 @@ console.log(
  */
 function deleteKey(dictionary, key) {
   // Перевірка, чи існує ключ у словнику
+  var obj = { key: dictionary };
   // Якщо ключ існує, видаляємо його та відповідне значення
+  if (obj) return true;
   // Якщо ключ не знайдено, повертаємо false
+  if ({ key }) return false;
 }
 
 // Приклад використання функції deleteKey
@@ -125,10 +129,15 @@ console.log(
  */
 function getKeysStartingWith(dictionary, letter) {
   // Оголошення порожнього масиву для збереження ключів
+  let arr = new Array();
   // Перебір ключів словника за допомогою циклу for...of
   // Перевірка, чи ключ починається з заданої букви
+  for (const dictionary of letter) {
+    if ({ key: letter }) dictionary + arr;
+  }
   // Якщо ключ починається з заданої букви, додаємо його до масиву
   // Повертаємо масив
+  return arr;
 }
 
 // Приклад використання функції getKeysStartingWith
